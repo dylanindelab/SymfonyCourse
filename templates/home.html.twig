@@ -6,7 +6,11 @@
     <title>Mon application</title>
 </head>
 <body>
-    <h1>Bonjour, comment tu va ? </h1>
-    <p>Personnellement moi ça va  ! </p>
+    <h1>{{ title }}</h1>
+    {% if age >= 18 %}
+        <p>Vous êtes majeur</p>
+    {% else %}
+        <p>Vous êtes mineur<p>
+    {% endif %}
 </body>
 </html>
