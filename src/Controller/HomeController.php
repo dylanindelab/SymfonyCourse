@@ -12,11 +12,14 @@ class HomeController extends AbstractController {
      */
 
      public function home() {
-         return $this->render(
+
+        $prenoms = ['Lior' => 31, 'Joseph' => 25, 'Anne' => 17];
+         return $this->render( 
             'home.html.twig',
             [
                 'title' => "Bonjour à tous",
-                'age' => 18
+                'age' => 18,
+                'tableau' => $prenoms
 
             ]
          );

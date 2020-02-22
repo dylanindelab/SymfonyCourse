@@ -14,5 +14,13 @@
     {% else %}
         <p>Vous êtes un enfant<p>
     {% endif %}
+
+    {% for prenom, age in tableau %}
+        <p>{{ prenom }} a {{ age }} ans</p>
+    {% endfor %}
+
 </body>
 </html>
+
+
+
