@@ -9,8 +9,10 @@
     <h1>{{ title }}</h1>
     {% if age >= 18 %}
         <p>Vous êtes majeur</p>
+    {% elseif age > 12 %}
+        <p>Vous êtes un ado ! </p>
     {% else %}
-        <p>Vous êtes mineur<p>
+        <p>Vous êtes un enfant<p>
     {% endif %}
 </body>
 </html>

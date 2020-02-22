@@ -16,7 +16,7 @@ class HomeController extends AbstractController {
             'home.html.twig',
             [
                 'title' => "Bonjour à tous",
-                'age' => 17
+                'age' => 18
 
             ]
          );
